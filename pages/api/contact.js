@@ -26,8 +26,10 @@ async function handler(req, res) {
       message,
     };
 
+    const connectionString = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTERNAME}.ipifet7.mongodb.net/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`;
+
     try {
-      await mongoose.connect(process.env.MONGODB_URL);
+      await mongoose.connect(connectionString);
 
       const newDoc = await Message.create(newMessage);
 

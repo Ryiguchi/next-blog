@@ -26,7 +26,6 @@ export async function getStaticProps() {
     props: {
       posts: featuredPosts,
     },
-    // revalidate: 60 * 60
   };
 }
 

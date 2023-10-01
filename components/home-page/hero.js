@@ -14,10 +14,7 @@ function Hero() {
         />
       </div>
       <h1>Hi, I'm Tamela</h1>
-      <p>
-        I blog about music and voodoo - especially the kind that hypnotizes my
-        boyfriend, Ryan.
-      </p>
+      <p>I blog about music - especially latin American and Swedish music.</p>
     </section>
   );
 }

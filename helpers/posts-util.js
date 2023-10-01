@@ -13,7 +13,6 @@ export function getPostData(postIdentifier) {
 
   const filePath = path.join(postsDirectory, `${postSlug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf-8');
-  // "data" contains the metadata as object "content" contains the markdown as string
   const { data, content } = matter(fileContent);
 
   const postData = {
